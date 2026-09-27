@@ -164,6 +164,9 @@ extend [the] selection to [the] end | select to [the] end:
     # help: Select to the end of the document
     edit.extend_file_end()
 
-select [from] [the word] <edit.target>:
-    # help: Select the target text or range
-    edit.target_select(edit.target)
+select [the word] <edit.text>:
+    # help: Select the target text
+    edit.target_select(edit.text_list)
+select [the word] <edit.text> through [the word] <edit.text> | select [from] [the word] <edit.text> to [the word] <edit.text>:
+    # help: Select from the first target text to the second
+    edit.target_select(edit.text_list)

@@ -114,6 +114,6 @@ delete [the] previous <number> words:
     repeat(number-1)
     edit.delete()
 
-delete <edit.target>:
+delete <edit.text> [through [the word] <edit.text>]:
     # help: Delete the target text
-    edit.target_delete(edit.target)
+    edit.target_delete(edit.text_list)

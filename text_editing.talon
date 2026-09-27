@@ -82,61 +82,61 @@ uppercase that | uppercase this | uppercase [the] selection:
     text = edit.selected_text()
     if text: insert(string.upper(text))
 
-capitalize <edit.target>:
+capitalize <edit.text> [through [the word] <edit.text>]:
     # help: Capitalize the target text
-    edit.target_capitalize(edit.target)
-lowercase <edit.target>:
+    edit.target_capitalize(edit.text_list)
+lowercase <edit.text> [through [the word] <edit.text>]:
     # help: Lowercase the target text
-    edit.target_lower(edit.target)
-uppercase <edit.target>:
+    edit.target_lower(edit.text_list)
+uppercase <edit.text> [through [the word] <edit.text>]:
     # help: Uppercase the target text
-    edit.target_upper(edit.target)
+    edit.target_upper(edit.text_list)
 
-replace <edit.target> with <phrase> | change <edit.target> to <phrase>:
+replace <edit.text> [through [the word] <edit.text>] with <phrase> | change <edit.text> [through [the word] <edit.text>] to <phrase>:
     # help: Replace the target text with the phrase
-    edit.target_replace(edit.target, "{phrase}")
+    edit.target_replace(edit.text_list, "{phrase}")
 
-correct [the word] <edit.target>:
+correct [the word] <edit.text>:
     # help: Open the correction window and show correction options for the target text
-    correct.target(edit.target)
+    correct.target(edit.text_list)
 
-bold <edit.target>:
+bold <edit.text> [through [the word] <edit.text>]:
     # help: Bold the target text
-    edit.target_bold(edit.target)
+    edit.target_bold(edit.text_list)
 
-italicize <edit.target>:
+italicize <edit.text> [through [the word] <edit.text>]:
     # help: Italicize the target text
-    edit.target_italic(edit.target)
+    edit.target_italic(edit.text_list)
 
-underline <edit.target>:
+underline <edit.text> [through [the word] <edit.text>]:
     # help: Underline the target text
-    edit.target_underline(edit.target)
+    edit.target_underline(edit.text_list)
 
-insert <phrase> after <edit.target>:
+insert <phrase> after <edit.text>:
     # help: Insert the phrase after the target text
-    edit.target_insert_after(edit.target, " {phrase}")
-insert <phrase> before <edit.target>:
+    edit.target_insert_after(edit.text_list, " {phrase}")
+insert <phrase> before <edit.text>:
     # help: Insert the phrase before the target text
-    edit.target_insert_before(edit.target, "{phrase} ")
+    edit.target_insert_before(edit.text_list, "{phrase} ")
 
-put [curly] braces around <edit.target>:
+put [curly] braces around <edit.text> [through [the word] <edit.text>]:
     # help: Put curly braces around the target text
-    edit.target_wrap(edit.target, "{", "}")
-put [double] curly quotes around <edit.target> | put [double] smart quotes around <edit.target>:
+    edit.target_wrap(edit.text_list, "{", "}")
+put [double] curly quotes around <edit.text> [through [the word] <edit.text>] | put [double] smart quotes around <edit.text> [through [the word] <edit.text>]:
     # help: Put double curly quotes around the target text
-    edit.target_wrap(edit.target, '“', "”")
-put [double] quotes around <edit.target>:
+    edit.target_wrap(edit.text_list, '“', "”")
+put [double] quotes around <edit.text> [through [the word] <edit.text>]:
     # help: Put double quotes around the target text
-    edit.target_wrap(edit.target, '"', '"')
-put parentheses around <edit.target>:
+    edit.target_wrap(edit.text_list, '"', '"')
+put parentheses around <edit.text> [through [the word] <edit.text>]:
     # help: Put parentheses around the target text
-    edit.target_wrap(edit.target, '(', ')')
-put single curly quotes around <edit.target> | put single smart quotes around <edit.target>:
+    edit.target_wrap(edit.text_list, '(', ')')
+put single curly quotes around <edit.text> [through [the word] <edit.text>] | put single smart quotes around <edit.text> [through [the word] <edit.text>]:
     # help: Put single curly quotes around the target text
-    edit.target_wrap(edit.target, "‘", "’")
-put single quotes around <edit.target>:
+    edit.target_wrap(edit.text_list, "‘", "’")
+put single quotes around <edit.text> [through [the word] <edit.text>]:
     # help: Put single quotes around the target text
-    edit.target_wrap(edit.target, "'", "'")
-put [square] brackets around <edit.target>:
+    edit.target_wrap(edit.text_list, "'", "'")
+put [square] brackets around <edit.text> [through [the word] <edit.text>]:
     # help: Put square brackets around the target text
-    edit.target_wrap(edit.target, "[", "]")
+    edit.target_wrap(edit.text_list, "[", "]")

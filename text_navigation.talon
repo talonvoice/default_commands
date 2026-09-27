@@ -124,9 +124,9 @@ move up [by] <number> paragraphs | move up [by] one paragraph | move up [by] [a]
     edit.paragraph_previous()
     repeat(number-1)
 
-move after <edit.target> | insert after <edit.target>:
+move after <edit.text> | insert after <edit.text>:
     # help: Move the cursor after the target text
-    edit.target_after(edit.target)
-move before <edit.target> | insert before <edit.target>:
+    edit.target_after(edit.text_list)
+move before <edit.text> | insert before <edit.text>:
     # help: Move the cursor before the target text
-    edit.target_before(edit.target)
+    edit.target_before(edit.text_list)
